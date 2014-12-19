@@ -35,7 +35,7 @@
                     on-keys-pressed="{{keyHandler}}"></core-a11y-keys>
 
     <!-- Auto ajax -->
-    <core-ajax id="ajax" auto url="{{selectedPage.page.url}}"
+    <core-ajax id="ajax" url="{{selectedPage.page.url}}"
            handleAs="document" on-core-response="{{onResponse}}">
     </core-ajax>
 
@@ -51,7 +51,7 @@
           <template repeat="{{page, i in pages}}">
             <paper-item hash="{{page.hash}}" noink>
               <core-icon icon="label{{route != page.hash ? '-outline' : ''}}"></core-icon>
-              <a href="{{page.url}}">{{page.name}}</a>
+              <a href="#{{page.hash}}">{{page.name}}</a>
             </paper-item>
           </template>
         </core-menu>
