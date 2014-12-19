@@ -13,9 +13,9 @@
   var cache = {};
 
   template.pages = [
-    {name: 'Projects', hash: 'projects', url: 'elements/demo/projects.html'},
-    {name: 'Orders', hash: 'orders', url: 'elements/demo/orders.html'},
-    {name: 'Products', hash: 'products', url: 'elements/demo/products.html'}
+    {name: 'Projects', hash: 'projects', url: '/elements/demo/projects.html'},
+    {name: 'Orders', hash: 'orders', url: '/elements/demo/orders.html'},
+    {name: 'Products', hash: 'products', url: '/elements/demo/products.html'}
   ];
 
   template.addEventListener('template-bound', function(e) {
